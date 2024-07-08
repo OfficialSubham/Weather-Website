@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Wittgenstein;
 }
 
 body {
@@ -12,10 +15,57 @@ body {
     align-items: center;    
 }
 
-.web-page{
+.weather-container{
     width: 25vw;
     height: 60vh;
-    background-color: aliceblue;
+    min-height: 400px;
+    min-width: 300px;
+    background-image: linear-gradient(120deg, #8ecae6, #219ebc);
     border-radius: 15px;
     border: none;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-container .top-contents {
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.top-contents .search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.search-input:focus {
+    outline: 2px solid #001d3d;
+}
+
+.search-input::placeholder {
+    color: #000;
+    font-weight: 500;
+}
+
+.top-contents .search-icon-div{
+    width: 50px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 5px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-icon-div .search-icon {
+    height: 20px;
+    width: 18px;
 }
