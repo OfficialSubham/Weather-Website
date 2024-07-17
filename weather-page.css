@@ -25,6 +25,7 @@ body {
     padding: 22px 26px;
     display: flex;
     flex-direction: column;
+    position: fixed;
 }
 
 .weather-container .top-contents {
@@ -140,4 +141,16 @@ body {
     font-weight: 400;
     text-wrap:nowrap;
     font-size: 15px;
+}
+
+.weather-container .hidden-message {
+    color: #fff;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    display: none;
+}
+
+.weather-container .not-hidden-message {
+    display: block;
 }

@@ -10,26 +10,27 @@
     
     <div class="weather-container">
         <div class="top-contents">
-            <input type="text" placeholder="Enter the name of the City" class="search-input">
+            <input type="text" placeholder="Enter the name of the City" class="search-input js-search-input">
             <div class="search-icon-div">
-                <img src="./images/search.png" alt="search Icon" class="search-icon">
+                <img src="./images/search.png" alt="search Icon" class="search-icon js-search">
             </div>
 
         </div>
 
+        <div class="hidden-message">No City Exist in that Name</div>
         
         <div class="mid-contents">
 
-            <div class="weather-image-div">
+            <div class="weather-image-div js-weather-image">
                 <img src="./images/clouds.png" alt="" class="weather-image">
             </div>
 
             <div class="temperature">
-                22 &deg;c
+                <span class="js-temperature"></span> &deg;c
             </div>
 
-            <div class="location">
-                New York
+            <div class="location js-location">
+                Kolkata
             </div>
 
         </div>
@@ -42,7 +43,7 @@
                 <img src="./images/humidity.png" alt="" class="bottom-image">
 
                 <div class="information">
-                    <span class="top-value">10%</span>
+                    <span class="top-value js-humidity-amount"></span>
                     <span class="top-value-info">Humidity</span>
                 </div>
                 
@@ -52,7 +53,7 @@
                 <img src="./images/wind.png" alt="" class="bottom-image">
                 
                 <div class="information">
-                    <span class="top-value">10 km/h</span>
+                    <span class="top-value js-wind-speed"></span>
                     <span class="top-value-info">Wind Speed</span>
                 </div>
 
@@ -62,6 +63,8 @@
 
     </div>
 
+
+    <script src="./weather-page.js"></script>
 
 </body>
 </html>
